@@ -1,0 +1,47 @@
+CHIODINI - 2015 by massimo corinaldesi (aka cameyo) - MIT license
+==================================================================
+This is a program to simulate the game of chiodini (see wikipedia).
+This is an educational tool for kids, but you can create nice icons, logo and symbols with it.
+
+You can draw (and erase) chiodini with click and with click&drag.
+You can't draw over old chiodini. You must erase it before.
+This is useful when drawing because you can't accidentally overwrite old chiodini.
+
+You can draw with arrow keys (up, down, left, right). It works like a turtle draw.
+i.e. Click in the grid: this is the start point. Now draw chiodini using the arrows key.
+
+The 'new' button wait for a confirm: you must press 'y' (new file) or 'n' (cancel).
+
+You can change chiodini dimension only at beginning of new draw.
+
+To select a color you must click over the rainbow palette or user palette or web safe palette colors.
+The 'pick' button is useful when you want to pick a color from chiodini grid (you forgot which color palette you picked...).
+
+The Zoom is useful when selecting color. Click on zoom window to enable/disable it.
+
+When the 'erase' button switch off, it sets current tool as previous tool.
+i.e. Draw, press 'e', erase, press 'e', draw.
+
+The background image (backImage.jpg) should be proportional to grid window dimension. i.e. 1200x600 or 1200x900
+You can't change background image at runtime.
+
+The 'save' button is red when there are unsaved changes.
+Save file without extension. The save command writes two file:
+1. a text file (as <name>)
+2. an image file (as <name>.png)
+
+The 'fill' command fills grid with current tool, but these chiodini are not saved in text file (only as image).
+Don't draw over filled chiodini. They are not saved.
+i.e. Press Fill, see the result, press Fill again to remove.
+
+The 'load colors' button loads a text file (userPalette.txt) with 25 colors (one for row).
+The colors must be in hexadecimal form (and must be 25).
+
+The hex value of current color (at right below the web safe palette) begin with alpha value (FF).
+
+A list of shortcuts is showed at lower left of main window.
+
+P.S. sorry for poor english. i'm italian :-)
+
+
+                                 Press 'H' or HELP button to show/hide this window

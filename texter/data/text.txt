@@ -1,0 +1,9 @@
+Texter by cameyo - Generative Gestaltung
+Draw with font...
+Draw horizontal horizontal and vertical vertical
+Diagonal
+Different fonts
+Different colors
+Change font parameters (dimension and kerning)
+Draw over image
+Save pdf and png.

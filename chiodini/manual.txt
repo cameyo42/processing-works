@@ -1,0 +1,143 @@
+CHIODINI
+========
+This is a program to simulate the game of chiodini (see wikipedia).
+This is an educational tool for kids, but you can create nice icons, logo and symbols with it.
+
+Functions
+=========
+
+command:   New 
+button:    new
+shortcut:  'n' or 'N' (and then 'y')
+action:    start a new draw (overwrite current draw)
+
+command:   1,..,7 
+button:    5,      10,    15,    20,    25,    30,    50
+shortcut:  '1' or '2' or '3' or '4' or '5' or '6' or '7'
+action:    set chiodini dimension (works only with new draw)
+
+command:   Open
+button:    open
+shortcut:  'o' or 'O'
+action:    open a file (overwrite current draw)
+
+command:   Save
+button:    save
+shortcut:  's' or 'S'
+action:    save current draw as text file with <name> and as image file with <name>.png
+
+command:   Load colors
+button:    load colors
+shortcut:  'l' or 'L'
+action:    load user file colors (userpalette.txt)
+
+command:   Fill
+button:    fill
+shortcut:  'f' or 'F'
+action:    show or hide a filled grid (filling with current tool)
+
+command:   Grid
+button:    grid
+shortcut:  'g' or 'G'
+action:    show or hide the points of grid
+
+command:   Image
+button:    image
+shortcut:  'i' or 'I'
+action:    show or hide background image (backImage.jpg)
+
+command:   Zoom
+button:    (zoom square window)
+shortcut:  'z' or 'Z'
+action:    toggle zoom window
+
+command:   Circle
+button:    circle
+shortcut:  'c' or 'C'
+action:    set Circle as current tool
+
+command:   Square
+button:    square
+shortcut:  'r' or 'R'
+action:    set Square (Rect) as current tool
+
+command:   Erase
+button:    erase
+shortcut:  'e' or 'E'
+action:    on/off Erase as current tool
+
+command:   Pick
+button:    pick
+shortcut:  'p' or 'P'
+action:    set Pick color as current tool
+
+command:   3D
+button:    3D
+shortcut:  'd' or 'D'
+action:    on/off draw 3d chiodini
+
+command:   pick color
+button:    rainbow palette or user palette or web safe palette
+shortcut:  (none)
+action:    set picked color as current color
+
+command:   Turtle draw
+button:    (none)
+shortcut:  arrow keys (up, down, left, right)
+action:    draw when moving with arrow keys
+
+command:   Esc
+button:    (none)
+shortcut:  Esc
+action:    quit program (without saving)
+
+
+Hints
+=====
+
+You can draw (and erase) chiodini with click and with click&drag.
+You can't draw over old chiodini. You must erase it before.
+This is useful when drawing because you can't accidentally overwrite old chiodini.
+
+You can draw with arrow keys (up, down, left, right).
+It works like a turtle draw.
+i.e. Put a chiodino in the grid: this is the start point. Now draw chiodini using the arrows key.
+
+The 'new' command wait for a confirm: you must press 'y' (new file) or 'n' (cancel).
+
+You can change chiodini dimension only at beginning of new draw.
+
+To select a color you must click over the rainbow palette or user palette or web safe palette colors.
+The button 'pick' is useful when you want to pick a color from chiodini grid (you forgot which color palette you picked...).
+
+The Zoom is useful when selecting color. Click on zoom window to enable/disable it.
+
+When the 'erase' button switch off, it sets current tool as previous tool.
+i.e. Draw, press 'e', erase, press 'e', draw.
+
+The background image (backImage.jpg) should be proportional to grid window dimension.
+i.e. 1200x600 or 1200x1000
+You can't change background image at runtime.
+
+Save file without extension. The save command writes two file:
+1. a text file (as <name>)
+2. an image file (as <name>.png)
+
+The 'fill' command fills grid with current tool, but these chiodini are not saved in text file (only as image).
+
+Don't draw over filled chiodini. They are not saved.
+i.e. Press Fill, see the result, press Fill again to remove.
+
+The 'load colors' button loads a text file (userPalette.txt) with 25 colors (one for row).
+The colors must be in hexadecimal form (and must be 25).
+
+The hex value of current color (at right below the web safe palette) begin with alpha value (FF).
+
+
+Copyright
+=========
+Copyright 2015 by massimo corinaldesi (aka cameyo).
+MIT license.
+
+
+P.S. sorry for poor english. i'm italian :-)
